@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Navigation Bar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #659287; /* Coral color */
+      padding: 10px 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .navbar a:hover {
+      background-color: #ff4500; /* Darker coral on hover */
+      border-radius: 5px;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    /* Form Section Box Styles */
+    .form-section {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #f9f9f9;
+      padding: 20px 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-section h1 {
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      color: #659287;
+      margin-bottom: 20px;
+    }
+    .form-section label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .form-section input,
+    .form-section textarea,
+    .form-section button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-section button {
+      background-color: #659287;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .form-section button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #659287;
+      color: white;
+    }
+    .footer-content p {
+      margin: 0;
+    }
+    .social-icons a img {
+      width: 25px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Meal Finder</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Contact Us Form Section -->
+  <div class="form-section">
+    <h1>Contact Us</h1>
+    <form action="submit_form1.php" method="POST">
+      <label for="name">Your name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    
+      <label for="concerns">Concerns:</label>
+      <textarea id="concerns" name="concerns" rows="4" required></textarea>
+    
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Carlo Balanquit. All rights reserved.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif ;
+    box-sizing: border-box;
+}
+.about{
+    
+    background-image: url('contact_us_2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+}
+.about img{
+    height: 590px;
+    width: 550px;
+}
+.about-text{
+  width:550px;  
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+}
+.about-text h1{
+    color:black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:black;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+span{
+    color: rgba(6, 4, 48, 0.762);
+}
+.about-text p{
+    color:black;
+    font-size: 25x;
+    line-height:28px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+.opacity{
+    opacity:1;
+    transition: background-image 0.3s ease, opacity 0.3s ease;
+}
+button{
+    background: rgb(94, 188, 225);
+    color: black;
+    text-decoration: solid;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid  rgb(94, 188, 225);
+    cursor:pointer;
+}
